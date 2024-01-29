@@ -33,8 +33,7 @@ class _HomePageState extends State<HomePage> {
 
     // Make your API request with the headers
     final http.Response response = await http.get(
-      Uri.parse(
-          'https://schoolmanagement.fliqr.site/wp-json/jwt-auth/v1/token/validate'),
+      Uri.parse('https://<your_site_url>/wp-json/jwt-auth/v1/token/validate'),
       headers: headers,
     );
 

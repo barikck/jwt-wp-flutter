@@ -26,8 +26,7 @@ class _LoginPageState extends State<LoginPage> {
     };
 
     final http.Response response = await http.post(
-      Uri.parse(
-          'https://schoolmanagement.fliqr.site/wp-json/jwt-auth/v1/token'),
+      Uri.parse('https://<your_site_url>/wp-json/jwt-auth/v1/token'),
       headers: {'Content-Type': 'application/json'},
       body: json.encode(data),
     );
